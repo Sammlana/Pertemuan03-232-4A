@@ -5,6 +5,6 @@ public class InputOutput{
             int nilai = 0;
             double rata = 0;
             String nama = 'Hisyam'
-            
+            Scanner scanner
         }
 }
