@@ -1,60 +1,68 @@
-public class Operator {
-    
-
-
+public class Operator{
     public static void main(String[] args){
-    
-    String nama = "Hisyam Alifian Maulana";
-    int jumlahSks = 144;
-    double ipk = 3.09;
-    String username = "admin";
-    String password = "admin";    
-    
-    System.out.println(1 + 2);
-    System.out.println(1 - 2);
-    System.out.println(1 * 2);
-    System.out.println(1 / 2);
-    System.out.println(1 % 2);
+        //operator operand
+        //binary
+        //assignment
+        String nama = "Hisyam";
+        int jumlahSks = 144;
+        double ipk = 3.89;
+        String username = "admin";
+        String password = "admin";
 
-    System.out.println(jumlahSks++);
-    System.out.println(++jumlahSks);
+        //aritmatika
+        System.out.println(1 + 2);
+        System.out.println(1 - 2);
+        System.out.println(1 * 2);
+        System.out.println(1 / 2);
+        System.out.println(1 % 2);
 
-    System.out.println(jumlahSks--);
+        //unary
+        System.out.println(jumlahSks++); //tampil dulu kemudian increment
+        System.out.println(++jumlahSks); //increment dulu kemudian tampil
 
-    System.out.println(ipk > 3.5 ? "Dengan Pujian" : "B aja");
+        System.out.println(jumlahSks--); 
+        //tidak bisa System.out.println(jumlahSks**); 
+        //tidak bisa System.out.println(jumlahSks//); 
 
-    String usernameInputan = "admin";
-    String passwordInputan = "admin"; 
-    
-    if(usernameInputan.equals(username)){
-        if(passwordInputan.equals(password)){
-            System.out.println("Berhasil");
+        //ternary
+        // System.out.println(); 
+        String ket = ipk > 3.5 ? "Dengan pujian" : "B aja";
+        System.out.println(ket); 
+        
+        String usernameInputan = "zz";
+        String passwordInputan = "admin";
+
+        if(usernameInputan.equals(username)){
+            if(passwordInputan.equals(password)){
+                System.out.println("Berhasil"); 
+            } else {
+                System.out.println("Username / Password Salah"); 
+            }
         } else {
-            System.out.println("Username / Password Salah");
+            System.out.println("Username / Password Salah"); 
         }
-    } else {
-        System.out.println("Username / Password Salah");
-    }
 
-    if(usernameInputan.equals(username)
-        &&
-        passwordInputan.equals(password)){
-            System.out.println("Berhasil");
+        if(usernameInputan.equals(username) 
+            && 
+            passwordInputan.equals(password)){
+            System.out.println("Berhasil"); 
         } else {
-            System.out.println("Username / Password Salah");
+            System.out.println("Username / Password Salah"); 
         }
-    
-        double totalBelanja = 25000;
-        double uangDiDompet = 26000;
+
+        double totalBelanja = 53000;
+        double uangDiDompet = 25000;
         double angsul = 0;
-        if (uangDiDompet > totalBelanja){
+        if(uangDiDompet < totalBelanja){
+            System.out.println("Kurang"); 
+        } else if (uangDiDompet > totalBelanja){
             angsul = uangDiDompet - totalBelanja;
-            System.out.println("Cukup, Angsul : " + angsul);
+            System.out.println("Cukup, angsul: " + angsul); 
         } else {
-            System.out.println("Pas");
+            System.out.println("Pas"); 
         }
 
+        System.out.println(angsul);
+        //scope
     }
-
-
 }
